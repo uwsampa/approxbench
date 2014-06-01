@@ -1,4 +1,4 @@
-APP_DIRS := fft sor
+APP_DIRS := fft lu mc sor
 
 .PHONY: all build run clean
 
