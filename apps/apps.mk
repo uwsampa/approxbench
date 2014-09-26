@@ -6,10 +6,6 @@ BUILD_DIR := built
 
 RSRC := ../../rsrc
 
-SCIMARK := $(RSRC)/scimark2
-SCIMARK_COMMON_NAMES := Constants.java Random.java kernel.java
-SCIMARK_COMMON := $(SCIMARK_COMMON_NAMES:%=$(SCIMARK)/jnt/scimark2/%)
-
 # Default target: compile.
 .PHONY: all build run
 all: build run
@@ -18,11 +14,20 @@ all: build run
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
-# Phony target to get the scimark2 sources.
+.PHONY: clean
+clean:
+	rm -rf $(BUILD_DIR)
+
+# SciMark2 sources.
+SCIMARK := $(RSRC)/scimark2
+SCIMARK_COMMON_NAMES := Constants.java Random.java kernel.java
+SCIMARK_COMMON := $(SCIMARK_COMMON_NAMES:%=$(SCIMARK)/jnt/scimark2/%)
 .PHONY: scimark2
 scimark2:
 	make -C $(RSRC) scimark2
 
-.PHONY: clean
-clean:
-	rm -rf $(BUILD_DIR)
+# PARSEC 3.0 sources.
+PARSEC := $(RSRC)/parsec-3.0
+.PHONY: parsec
+parsec:
+	make -C $(RSRC) parsec-3.0
