@@ -3,3 +3,4 @@ rsrc/*.tar.gz
 rsrc/parsec-3.0/
 rsrc/scimark2/
 apps/*/built/
+site/_site

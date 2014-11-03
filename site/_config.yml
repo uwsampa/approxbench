@@ -1,0 +1,9 @@
+name: ApproxBench
+url: http://approxbench.org
+
+markdown: kramdown
+kramdown:
+    enable_coderay: false
+    auto_ids: false
+    entity_output: symbolic
+highlighter: null
