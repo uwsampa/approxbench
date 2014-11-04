@@ -7,3 +7,6 @@ kramdown:
     auto_ids: false
     entity_output: symbolic
 highlighter: null
+
+exclude:
+    - Makefile

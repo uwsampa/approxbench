@@ -14,7 +14,7 @@ ApproxBench aims to make approximate-computing evaluations easier and better by 
 
 ---
 
-The [ApproxBench harnesses][gh] are in development. In the mean time, check out [EnerJ's Java benchmark suite][enerj-apps] and [ACCEPT's C/C++ suite][accept-apps]. You may also be interested in [the related benchmark suite from Georgia Tech's ACT Lab][axbench].
+The [ApproxBench harnesses][gh] are in development. In the mean time, check out [EnerJ's Java benchmark suite][enerj-apps] and [ACCEPT's C/C++ suite][accept-apps]. You may also be interested in [AxBench from Georgia Tech's ACT Lab][axbench].
 
 ---
 
@@ -24,6 +24,6 @@ ApproxBench is a project of the [University of Washington Department of Computer
 [sampa]: http://sampa.cs.washington.edu
 [cse]: http://www.cs.washington.edu
 [gh]: https://github.com/uwsampa/approxbench
-[axbench]: http://act-lab.org/bench.html
+[axbench]: http://axbench.org
 [enerj-apps]: http://sampa.cs.washington.edu/research/approximation/enerj.html
 [accept-apps]: https://github.com/uwsampa/accept-apps
